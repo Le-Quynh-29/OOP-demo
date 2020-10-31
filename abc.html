@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let array = [[1,2,4,5],[-2,-3,-4,-5],[8,9,10,11],[0,2,8,9]]
+  // var sum1 = 0;
+  //  var sum2 =0;
+    //let sum = 0;
+    //for (let i = 0; i < array.length; i++) {
+       // for (let j = 0; j < array.length; j++) {
+          //  if (i === j) {
+           //     sum1 += array[i][j];
+           // }
+           // if (i + j === array.length-1) {
+             //   sum2 += array[j][i];
+          //  }
+        //} sum = sum1 + sum2;
+   // }document.write(sum);
+    let array = [[5,7,0,3],[0,11,9,4],[5,7,8,5],[11,10,9,0],[0,6,6,9]];
+    let sum = 0;
+    for (let i = 0; i < array[0].length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (array[j][i] === 0){
+                break;
+            }
+
+            sum += array[j][i];
+        }
+
+    } document.write(sum);
+</script>
+</body>
+</html>

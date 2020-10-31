@@ -1,0 +1,45 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    var arr = [1,3,5,5,8,9];-->
+<!--    var ne = arr.map(function (cmc){-->
+<!--        if (cmc == 5) {-->
+<!--            return "abc";-->
+<!--        }-->
+<!--        if (cmc == 3) {-->
+<!--            return "so ba";-->
+<!--        }-->
+<!--        return 100;-->
+
+<!--    })-->
+<!--    console.log(ne);-->
+<!--</script>-->
+<!--</body>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>Học lập trình miễn phí tại freetuts.net</h1>
+<p>Click vào button kiểm tra học sinh có đủ điểm đỗ không.</p>
+
+<button onclick="myFunction()">Kiểm tra</button>
+
+<p id="demo"></p>
+
+<script>
+    var subject = ["CSS", "HTML", "PYTHON", "C"];
+    document.getElementById("demo").innerHTML = subject;
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = subject.fill("PHP", 2, 4);
+    }
+</script>
+</body>
+</html>
